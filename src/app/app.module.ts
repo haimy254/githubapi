@@ -1,3 +1,4 @@
+import { RepoService } from './repo.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from "@angular/common/http"
@@ -22,7 +23,7 @@ import { ProfileService } from './profile.service';
     AppRoutingModule,
   HttpClientModule,
   ],
-  providers: [ProfileService],
+  providers: [ProfileService,RepoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
