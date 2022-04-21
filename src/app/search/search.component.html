@@ -1,10 +1,35 @@
-<div class="input-group">
-  <div class="form-outline">
-    <input type="search" id="form1" class="form-control" name="userName" #userName/>
-    <label class="form-label" for="form1">Search</label>
+<div class="container-fluid">
+  <div class="input-group">
+    <div class="row">
+      <div class="col-sm">
+        <div class="form-outline">
+          <input
+            type="search"
+            id="form1"
+            class="form-control"
+            name="userName"
+            #userName
+          />
+          <label class="form-label" for="form1"></label>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <ul *ngIf="userName">
+          <li ></li>
+       
+        <h5></h5>
+        </ul>
+      </div>
+      <div class="col-sm">
+        <button
+          type="button"
+          (click)="onSubmit(userName.value)"
+          class="btn btn-primary"
+        >
+          <i class="fas fa-search">submit</i>
+        </button>
+      </div>
+      
+    </div>
   </div>
-
-  <button type="button" (click)="onSubmit(userName.value)" class="btn btn-primary">
-    <i class="fas fa-search">submit</i>
-  </button>
 </div>
