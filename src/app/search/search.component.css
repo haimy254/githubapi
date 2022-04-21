@@ -1,8 +1,10 @@
-/* *{
-    padding: 0px;
-    margin:10px;
+*{
+    padding: 5px;
+    margin:0px;
 }
 
-/* .input-group{
+.input-group{
    background: linear-gradient(110deg, #0066CC , #33CCFF);
-} */ 
+   background-image: url("../../assets/14736.jpg");
+   height: 620px;
+} 

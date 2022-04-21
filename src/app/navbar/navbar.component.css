@@ -1,10 +1,10 @@
 .nav{
     background-color: black;
-height: 100px;
+height: 70px;
 list-style: none;
 }
 
-.nav-link{
+.nav-item{
     display: flex;
     justify-content: space-around;
     align-items: center;
