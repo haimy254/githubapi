@@ -1,10 +1,10 @@
-*{
-    padding: 5px;
-    margin:0px;
-}
+/* * {
+  padding: 0px;
+  margin: 0px;
+} */
 
-.input-group{
-   background: linear-gradient(110deg, #0066CC , #33CCFF);
-   background-image: url("../../assets/14736.jpg");
-   height: 620px;
-} 
+.input-section {
+  background: linear-gradient(110deg, #0066cc, #33ccff);
+  background-image: url("../../assets/14736.jpg");
+  min-height: 620px;
+}
