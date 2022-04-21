@@ -19,7 +19,7 @@ import { ProfileService } from './profile.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClient,
+  HttpClient,
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]
