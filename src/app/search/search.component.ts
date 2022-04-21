@@ -21,7 +21,6 @@ export class SearchComponent implements OnInit {
     this.profileService.getUser(userName).then((result) => {
       console.log(result);
       this.user = result;
-      //okay iwant this resuuuult in the html
     });
   }
 }
