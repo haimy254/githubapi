@@ -1,13 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ProfileComponent } from './profile/profile.component';
-
+import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProfileService {
-  BaseUrl="https://api.github.com/"
+  [x: string]: any;
+  BaseUrl = 'https://api.github.com/';
+  user: any = 'haimy254';
 
-  constructor( private http : HttpClient) { }
+  constructor(private http: HttpClient) {
+    async () => {
+      let response = await http.get(`${this.BaseUrl}/users/${this.user}`);
+      console.log(response)
+    };
+  }
 }
