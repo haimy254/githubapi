@@ -1,6 +1,31 @@
 <div class="container-fluid">
  
    <P class="profile-title"><strong><u>REPOS</u></strong> </P>
+   <div class="row p-3">
+      <div class="col-md-8">
+        <div>
+          <input
+            type="search"
+            id="form1"
+            class="form-control"
+            name="userName"
+            placeholder="enter github repo"
+            required
+            #userName
+          />
+          <label class="form-label" for="form1"></label>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <button
+          type="button"
+          (click)="onSubmit()"
+          class="btn btn-primary"
+        >
+          <i class="fas fa-search">submit</i>
+        </button>
+      </div>
+    </div>
 
 
 </div>
