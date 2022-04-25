@@ -12,8 +12,8 @@ export class RepoService {
 
   constructor(private http: HttpClient) {}
 
-  async getUser(userName: string) {
-    let response = this.http.get(`${this.BaseUrl}/users/${userName}`);
+  async getUser(repo: string) {
+    let response = this.http.get(`${this.BaseUrl}/users/${repo}`);
     return await lastValueFrom(response).then((result) => result);
   }
 }

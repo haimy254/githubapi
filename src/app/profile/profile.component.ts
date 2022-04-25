@@ -1,7 +1,6 @@
-
 import { Component, OnInit } from '@angular/core';
 import { Repo } from '../repo';
-
+import { RepoService } from '../repo.service';
 
 @Component({
   selector: 'app-profile',
@@ -9,8 +8,18 @@ import { Repo } from '../repo';
   styleUrls: ['./profile.component.css'],
 })
 export class ProfileComponent implements OnInit {
-  constructor() {}
+  repo!: Repo[];
+ 
+
+  constructor(private RepoService: RepoService) {}
 
   ngOnInit(): void {}
-  onSubmit(){}
+  onClick(repo: string) {
+    console.log(repo);
+
+    this.RepoService.getUser(repo).then((result) => {
+      console.log(result);
+      this.repo = [];
+    });
+  }
 }
