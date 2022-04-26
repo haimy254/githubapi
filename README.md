@@ -6,6 +6,9 @@ This is an Angular application that allows the user to enter the username and it
 It also allows the user to search for repo.
 
 ## LANGUAGES USED
-    typescript
-    css
-    html
+    TYPESCRIPT
+    CSS
+    HTML
+    JAVASCRIPT
+    
+    
