@@ -11,6 +11,8 @@ It also allows the user to search for repo.
     HTML
     JAVASCRIPT
     
+    <image src=".">
+    
   ##LICENSE
   
   MIT License
